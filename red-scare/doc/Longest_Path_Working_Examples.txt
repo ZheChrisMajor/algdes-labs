@@ -1,0 +1,2 @@
+Should work when:
+There is only one path.
