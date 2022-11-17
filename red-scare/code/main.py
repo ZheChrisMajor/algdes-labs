@@ -1,5 +1,5 @@
-# python rs-solution.py < ../data/G-ex.txt
-#requires mat.plotlib and 
+# python code/main.py < data/<file>.txt
+# requires mat.plotlib and igraph
 import igraph as ig
 import matplotlib.pyplot as plt
 from igraph import Graph
