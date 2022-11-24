@@ -10,11 +10,7 @@ pip install matplotlib
 
 ## Running the code
 Currently the code can be run directly from the command line by piping a data file into the main file using the following command; 
-```python main.py < <path to file>```.
+`python main.py < <path to file>`.
 
 ## Running all the data
-Run 
-```
-python ./code/filesmuggler.py
-``` 
-from the root `red-scare`
+Run `python ./code/filesmuggler.py` from the root `red-scare`

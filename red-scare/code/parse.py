@@ -2,8 +2,8 @@
 def parseInput():
     num_vertices, num_edges, num_reds = map(int, input().split())
     source, sink = input().split()
-    #print(num_vertices,num_edges,num_reds)
-    #print(source,sink)
+    # print(num_vertices,num_edges,num_reds)
+    # print(source,sink)
     labels = {}
     colors = []
     for i in range(num_vertices):
