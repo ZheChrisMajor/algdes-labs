@@ -65,7 +65,7 @@ def none(labels, colors, edges, weights, source, sink):
     j.vs['label'] = list(labels.keys())
     j.vs['color'] = colors
     ig.plot(j)
-    plt.show()
+    #plt.show()
     test = j.distances(labels[source], labels[sink])
     result = test[0][0]
     if result == float("inf"):
@@ -81,7 +81,7 @@ def alternate(labels, colors, edges, weights, source, sink):
     j.vs['label'] = list(labels.keys())
     j.vs['color'] = colors
     ig.plot(j)
-    plt.show()
+    #plt.show()
     test = j.distances(labels[source], labels[sink])
     result = test[0][0]
     if result == float("inf"):
@@ -93,7 +93,7 @@ def few(labels, colors, edges, weights, source, sink):
     j.vs['label'] = list(labels.keys())
     j.vs['color'] = colors
     ig.plot(j)
-    plt.show()
+    #plt.show()
     result = j.distances(labels[source],labels[sink],weights)[0][0]
     if result == float("inf"):
         return -1
@@ -106,4 +106,4 @@ labels, colors, edges, weights, source, sink = parseInput()
 print(few(labels, colors, edges, weights, source, sink))
 
 # ax = ig.plot(j)
-# plt.show()
+# #plt.show()

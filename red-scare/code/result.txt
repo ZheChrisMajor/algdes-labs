@@ -1,0 +1,5 @@
+
+forest_gump.txt	6	false	-1	-1	-1	false
+common-1-20.txt	20	false	-1	-1	-1	false
+P3.txt	3	true	1	1	-1	true
+G-ex.txt	8	true	0	-	3	-

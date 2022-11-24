@@ -16,28 +16,28 @@ def many(labels, colors, edges, weights, source, sink):
     j = Graph(n=len(labels), edges=edges, directed=True)
     j.vs['label'] = list(labels.keys())
     j.vs['color'] = colors
-    ig.plot(j)
-    plt.show()
+    # ig.plot(j)
+    # plt.show()
     if (j.is_dag()):
         # Negate all edgeweights, to run shortest path normally
         j.es['weight'] = list(map(lambda x: -x, weights))
-        print("Is dag!")
         result = j.distances(labels[source], labels[sink], j.es['weight'])[0][0]
         if result != float("inf"):
             result = result*-1
             return int(result + 1 if colors[labels[source]] == 'red' else result)
+        else: 
+            return -1
     else:    
         for comp in j.decompose():
             if source in comp.vs['label'] and sink in comp.vs['label']:
                 comp.to_undirected()
                 if comp.is_tree():
-                    print("Is tree!")
                     comp.es['weight'] = list(map(lambda x: getUndirectedWeight(comp.vs, x), comp.es))
-                    ig.plot(comp)
-                    plt.show()
+                    # ig.plot(comp)
+                    # plt.show()
                     source_new_id = list(comp.vs['label']).index(source)
                     sink_new_id = list(comp.vs['label']).index(sink)
                     return int(comp.distances(source_new_id, sink_new_id, comp.es['weight'])[0][0] / 2)
-    return -1
-                
-        
+            else:   
+                return -1
+    return "-"
