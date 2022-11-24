@@ -7,6 +7,7 @@ from few import few
 from alternate import alternate
 from none import none
 from many import many
+from some import some
 from parser import parseInput
 
 
@@ -15,7 +16,8 @@ ig.config['plotting.backend'] = 'matplotlib'
 
 """Run"""
 labels, colors, edges, weights, source, sink = parseInput()
-# print(none(labels, colors, edges, weights, source, sink))
-# print(alternate(labels, colors, edges, weights, source, sink))
-print("few: ",few(labels, colors, edges, weights, source, sink))
-print("many: ",many(labels, colors, edges, weights, source, sink))
+print("none: ", none(labels, colors, edges, weights, source, sink))
+print("alternate: ", alternate(labels, colors, edges, weights, source, sink))
+print("few: ", few(labels, colors, edges, weights, source, sink))
+print("many: ", many(labels, colors, edges, weights, source, sink))
+print("some: ", some(labels, colors, edges, weights, source, sink))
