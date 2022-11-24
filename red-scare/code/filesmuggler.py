@@ -1,9 +1,9 @@
 import os
 import sys
 
-Path = "./data/tinydata/"
+Path = "./data/"
 filelist = os.listdir(Path)
-sys.stdout = open("./code/result.txt", "a")
+sys.stdout = open("./code/result.txt", "w")
 for i in filelist:
     if i.endswith(".txt"):  # You could also add "and i.startswith('f')
         #print(i)
