@@ -11,4 +11,4 @@ def few(labels, colors, edges, weights, source, sink):
     result = j.distances(labels[source],labels[sink],weights)[0][0]
     if result == float("inf"):
         return -1
-    return result 
+    return int(result + 1 if colors[labels[source]] == 'red' else result)

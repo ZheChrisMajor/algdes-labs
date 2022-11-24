@@ -17,10 +17,5 @@ ig.config['plotting.backend'] = 'matplotlib'
 labels, colors, edges, weights, source, sink = parseInput()
 # print(none(labels, colors, edges, weights, source, sink))
 # print(alternate(labels, colors, edges, weights, source, sink))
-# print(few(labels, colors, edges, weights, source, sink))
-<<<<<<< HEAD
-print(many(labels, colors, edges, weights, source, sink))
-=======
-j = Graph(n=len(labels), edges=edges, directed=True)
-print(j.is_dag())
->>>>>>> 873e6ac2c1b56b1427a9205dced086682666b374
+print("few: ",few(labels, colors, edges, weights, source, sink))
+print("many: ",many(labels, colors, edges, weights, source, sink))
