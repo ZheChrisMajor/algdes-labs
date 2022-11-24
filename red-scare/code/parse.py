@@ -8,8 +8,8 @@ def parseInput():
     colors = []
     for i in range(num_vertices):
         name = input().strip()
-        red = ' *' in name      
-        name = name[:-2] if red else name
+        red = ' *' in name
+        name = name.split()[0] if red else name
         labels[name] = i
         colors.append( 'red' if red else 'blue' )
 
