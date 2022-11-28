@@ -13,4 +13,4 @@ Currently the code can be run directly from the command line by piping a data fi
 `python main.py < <path to file>`.
 
 ## Running all the data
-Run `python ./code/filesmuggler.py` from the root `red-scare`
+Run `python ./code/filesmuggler.py` from the root `red-scare`to run through all the data files. Results will be written to `result.txt`
