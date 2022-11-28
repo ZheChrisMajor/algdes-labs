@@ -20,9 +20,12 @@ ig.config['plotting.backend'] = 'matplotlib'
 """Run"""
 labels, colors, edges, weights, source, sink = parseInput()
 
+# Store results in variables for printing.
 result_none = none(labels, colors, edges, weights, source, sink)
 result_alternate = alternate(labels, colors, edges, weights, source, sink)
 result_few = few(labels, colors, edges, weights, source, sink)
 result_many = many(labels, colors, edges, weights, source, sink)
 result_some = some(labels, colors, edges, weights, source, sink)
+
+# Print the result in desired order, with tabs.
 print(sys.argv[1], len(labels),result_alternate, result_few, result_many, result_none, result_some, sep="\t")
