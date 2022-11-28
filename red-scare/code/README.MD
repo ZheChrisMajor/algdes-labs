@@ -13,7 +13,7 @@ Currently the code can be run directly from the command line by piping a data fi
 `python main.py < <path to file>`.
 
 ## Running all the data
-Run `python ./code/filesmuggler.py` from a parent directory containing both our `/code/` folder and the `/data/` folder to run through all the data files. Results will be written to `result.txt`.
+Run `python ./code/filesmuggler.py` from a parent directory containing both our `code` folder and the `data` folder to run through all the data files. Results will be written to `code/result.txt`.
 
 ## GitHub repository for the assignment
 https://github.com/ZheChrisMajor/algdes-labs/tree/master/red-scare
